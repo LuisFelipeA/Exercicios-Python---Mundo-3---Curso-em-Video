@@ -12,7 +12,6 @@ tabela = ("Atlético-MG", "Flamengo", "Palmeiras", "Fortaleza", "Corinthians", "
 
 print("-"*5)
 
-
 print("5 primeiros:")
 posicao = 1
 for c in range(5):
