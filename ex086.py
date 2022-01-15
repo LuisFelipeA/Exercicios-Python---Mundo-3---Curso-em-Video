@@ -2,16 +2,16 @@
 
 matriz = [[],[],[]]
 
-for coluna in range(len(matriz)):
-    for linha in range(3):
+for linha in range(3):
+    for coluna in range(3):
         n1 = float(input(f"Digite um valor para adicionar na matriz: "))
-        matriz[coluna].append(n1)
+        matriz[linha].append(n1)
 
 
 print("-"*30)
 
-for coluna in range(len(matriz)):
-    for linha in range(3):
+for linha in range(3):
+    for coluna in range(3):
         print(f"[{matriz[linha][coluna]:^7}]", end=" ")
     print()
 
