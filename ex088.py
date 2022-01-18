@@ -9,9 +9,12 @@ qtdJogos = int(input("Digite a quantidade de jogos que sera gerado: "))
 
 for jogo in range(qtdJogos):
     jogoAtual = []
-    for n in range(6):
+    while True:
         numero = random.randint(1,60)
-        jogoAtual.append(numero)
+        if numero not in jogoAtual:
+            jogoAtual.append(numero)
+        if len(jogoAtual) == 6:
+            break
     palpite.append(jogoAtual)
 
 print("-"*32)
@@ -21,4 +24,7 @@ print("-"*32)
 for i in range(qtdJogos):
     print(f"Jogo {i + 1}: {palpite[i]}")
     time.sleep(1)
-print("-"*11, "Boa Sorte", "-"*11)
+
+print("-"*32)
+print("-"*11, "Boa Sorte", "-"*10)
+print("-"*32)
